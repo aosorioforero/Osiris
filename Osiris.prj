@@ -1,0 +1,134 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="H:\PRIVATE\Georgia\Scripts\Osiris.prj" location="H:\PRIVATE\Georgia\Scripts" name="Osiris" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>Osiris</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Alejandro Osorio-Forero</param.authnamewatermark>
+    <param.email>alejandro.osorioforero@unil.ch</param.email>
+    <param.company>Unil</param.company>
+    <param.summary />
+    <param.description>Please find in this repository the source code for the application Osiris. This application is used for visualization of the data acquired with the RT-Biolumicorder (Saini,et al. 2013). It allows the display of the photon and activity dynamics of the animals as well as the food access and light exposure. In addition, it allows doing basic group analysis and saving the figures for latter publication.
+
+Feel free to download, modify and use the application for your experiments and other purpuses as far as you always share the modifications with the comunity in a open source manner and reference to this depository and this publication: Katsioudi et al., 2021.
+
+Other references C. Saini, A. Liani, T. Curie, et al. (2013) Real-time recording of circadian liver gene expression in freely moving mice reveals the phase-setting behavior of hepatocyte clocks., Genes &amp; Development. 27, 1526–1536.</param.description>
+    <param.screenshot>${PROJECT_ROOT}\LOGO-01.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\Unil\Osiris\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\Osiris\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\Osiris\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\Osiris\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\Osiris</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments 
+ Description 
+ 	 Please find in this repository the source code for the application Osiris. This application is used for visualization of the data acquired with the RT-Biolumicorder (Saini,et al. 2013). It allows the display of the photon and activity dynamics of the animals as well as the food access and light exposure. In addition, it allows doing basic group analysis and saving the figures for latter publication.
+
+Feel free to download, modify and use the application for your experiments and other purpuses as far as you always share the modifications with the comunity in a open source manner and reference to this depository and this publication: Katsioudi et al., 2021.
+
+Other references C. Saini, A. Liani, T. Curie, et al. (2013) Real-time recording of circadian liver gene expression in freely moving mice reveals the phase-setting behavior of hepatocyte clocks., Genes &amp; Development. 27, 1526–1536.</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.summary />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\p_Osiris_v1.m</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\shadedErrorBar.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\Osiris\for_testing" name="Osiris.exe" optional="false">H:\PRIVATE\Georgia\Scripts\Osiris\for_testing\Osiris.exe</file>
+      <file location="${PROJECT_ROOT}\Osiris\for_testing" name="splash.png" optional="false">H:\PRIVATE\Georgia\Scripts\Osiris\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\Osiris\for_testing" name="readme.txt" optional="true">H:\PRIVATE\Georgia\Scripts\Osiris\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2019a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
