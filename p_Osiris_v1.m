@@ -7,14 +7,16 @@ function p_Osiris_v1()
 % access and light exposure. In addition, it allows doing basic group 
 % analysis and saving the figures for latter publication.
 % 
-% Reference
-%
+% Reference: Katsioudi, G., Osorio-Forero, A., Sinturel, F., Hagedorn, C., Kreppel, F.,
+% Schibler, U., & Gatfield, D. (2022). Recording of Diurnal Gene Expression in Peripheral 
+% Organs of Mice Using the RT-Biolumicorder. Methods in molecular biology (Clifton, N.J.), 
+% 2482, 217â€“242. https://doi.org/10.1007/978-1-0716-2249-0_15
 %
 % Other references 
 % C. Saini, A. Liani, T. Curie, et al. (2013) Real-time recording of 
 % circadian liver gene expression in freely moving mice reveals the 
 % phase-setting behavior of hepatocyte clocks., Genes & Development. 
-% 27, 1526–1536.
+% 27, 1526â€“1536.
 % 
 %
 % Copyright (c) 2020, Alejandro Osorio
@@ -1379,7 +1381,7 @@ st_Main.GroupAnalysis = uicontrol(st_Main.st_MainFig,...
                 v_Slopes_Act(end+1:end+s_NAnimalsInG,1)     = (v_Time(v_PosMin)-v_Time(v_PosMax))./(v_MinG-v_MaxG);
                 v_Phases_Act(end+1:end+s_NAnimalsInG,1)     = v_Time(v_PosMax);
                 v_Amplitudes_Act(end+1:end+s_NAnimalsInG,1) = v_MaxG-v_MinG;
-%                 dTime = mean(diff(v_Time)); 	% Find Mean Differece In ‘x’ Values
+%                 dTime = mean(diff(v_Time)); 	% Find Mean Differece In â€˜xâ€™ Values
 %                 dy = gradient(m_Act,dTime);         % Calculate Slope Of Data
 
                 % Photons
